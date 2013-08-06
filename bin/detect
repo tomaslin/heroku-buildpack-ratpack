@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # bin/use <build-dir>
 
-echo "Elite FOAAS Ratpack App"
+if [ -f $1/src/ratpack/ratpack.groovy ]; then
+   echo "Ratpack" && exit 0
+else
+  echo "no" && exit 1
+fi
+
 exit 0
