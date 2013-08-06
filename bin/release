@@ -13,8 +13,5 @@ config_vars:
 EOF
 
 if [ ! -f $BUILD_DIR/Procfile ]; then
-cat <<EOF
-default_process_types:
-  web: build/install/foaas/bin/foaas build/install/foaas/ratpack.groovy
-EOF
+  echo "No Procfile defined, please create a Procfile in your application root and add the command needed to run your application, i.e.  web: build/install/foaas/bin/foaas build/install/foaas/ratpack.groovy"
 fi
