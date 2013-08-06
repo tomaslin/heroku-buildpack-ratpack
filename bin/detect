@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# bin/use <build-dir>
+
+echo "Elite FOAAS Ratpack App"
+exit 0
